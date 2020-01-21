@@ -1,5 +1,6 @@
 package com.example.androidlab
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -19,9 +20,18 @@ class ViewToDoActivity : AppCompatActivity() {
         textViewContent.text = toDoItem?.content
 
         val buttonDelete = this.findViewById<Button>(R.id.button_delete)
+        val buttonUpdate = this.findViewById<Button>(R.id.button_Redirect_Update)
 
         buttonDelete.setOnClickListener{
             toDoRepository.deleteToDoById(id)
+            finish()
+        }
+        buttonUpdate.setOnClickListener{
+            val intent = Intent(this, CreateToDoActivity::class.java)
+            intent.putExtra("updateId", id)
+            startActivity(intent)
+            finish()
+
         }
 
     }
