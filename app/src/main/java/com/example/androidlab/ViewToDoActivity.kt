@@ -14,8 +14,11 @@ class ViewToDoActivity : AppCompatActivity() {
 
         val textViewTitle = this.findViewById<TextView>(R.id.text_View_title)
         val textViewContent = this.findViewById<TextView>(R.id.text_View_content)
+
         val id = intent.getIntExtra("listId", 0)
+
         val toDoItem = toDoRepository.getToDoById(id)
+
         textViewTitle.text = toDoItem?.title
         textViewContent.text = toDoItem?.content
 
