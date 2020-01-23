@@ -22,6 +22,7 @@ class CreateToDoActivity : AppCompatActivity() {
             toDoRepository.addToDo(newTitle,newContent)
             val allToDos = toDoRepository.getAllToDos()
             val lastId = allToDos.last().id
+
             val intent = Intent(this, ViewToDoActivity::class.java)
             intent.putExtra("listId", lastId)
             startActivity(intent)

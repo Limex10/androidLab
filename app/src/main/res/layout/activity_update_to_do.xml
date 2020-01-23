@@ -11,40 +11,62 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="98dp"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="68dp"
         android:layout_marginEnd="100dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Title"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/text_View_Title_Val" />
 
     <EditText
         android:id="@+id/edit_Text_Content_Update"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="213dp"
+        android:layout_height="50dp"
         android:layout_marginStart="97dp"
-        android:layout_marginTop="23dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="101dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Content"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_Text_Title_Update" />
+        app:layout_constraintTop_toBottomOf="@+id/text_View_Content_Val" />
 
     <Button
         android:id="@+id/button_Update"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"
-        android:layout_marginTop="107dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="163dp"
-        android:layout_marginBottom="347dp"
-        android:text="Save"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/buttonUpdate"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edit_Text_Content_Update" />
+
+    <TextView
+        android:id="@+id/text_View_Title_Val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_View_Content_Val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_Text_Title_Update" />
 </androidx.constraintlayout.widget.ConstraintLayout>

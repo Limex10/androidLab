@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroidLab</string>
+    <string name="button">Knapp</string>
+    <string name="textview">TextVy</string>
+    <string name="buttonUpdate">Spara</string>
+    <string name="button_Redirect_Update">Uppdatera</string>
+    <string name="button_Delete">Ta bort</string>
+    <string name="button_Save">Spara</string>
+    <string name="setTitle_Notify_Delete">Är du säker på att du vill ta bort? </string>
+    <string name="setMessage_Notify_Delete">Ta bort ToDo </string>
+    <string name="setPositive_Notify_Delete">Ja </string>
+    <string name="setNegative_Notify_Delete">Nej </string>
+    <string name="validate_Title_Min">Titel måste vara mer än 3 långt.</string>
+    <string name="validate_Title_Max">Titel får max vara 15 långt.</string>
+    <string name="validate_Content_Min">Beskrivningen måste vara mer än 6 långt.</string>
+    <string name="validate_Content_max">Beskrivningen får max vara 50 långt.</string>
+    <string name="button_Create">Skapa ny</string>
+</resources>

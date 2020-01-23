@@ -2,4 +2,17 @@
     <string name="app_name">AndroidLab</string>
     <string name="button">Button</string>
     <string name="textview">TextView</string>
+    <string name="buttonUpdate">Update</string>
+    <string name="button_Redirect_Update">Update</string>
+    <string name="button_Delete">Delete</string>
+    <string name="button_Save">Save</string>
+    <string name="setTitle_Notify_Delete">Do you really want to delete it? </string>
+    <string name="setMessage_Notify_Delete">Delete ToDo </string>
+    <string name="setPositive_Notify_Delete">Yes </string>
+    <string name="setNegative_Notify_Delete">No </string>
+    <string name="validate_Title_Min">Title must be more than 3 letters.</string>
+    <string name="validate_Title_Max">Title max 15 letters.</string>
+    <string name="validate_Content_Min">Content must be more than 6 letters.</string>
+    <string name="validate_Content_max">Content max 50 letters.</string>
+    <string name="button_Create">Create</string>
 </resources>

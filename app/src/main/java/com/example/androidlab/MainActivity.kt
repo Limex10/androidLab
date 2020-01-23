@@ -9,18 +9,22 @@ import android.widget.ListView
 
 class MainActivity : AppCompatActivity() {
 
+    var adapter: ArrayAdapter<ToDo>? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         val listView = this.findViewById<ListView>(R.id.list_view)
-        listView.adapter = ArrayAdapter<ToDo>(
+
+        adapter = ArrayAdapter<ToDo>(
             this,
             android.R.layout.simple_list_item_1,
             android.R.id.text1,
 
             toDoRepository.getAllToDos()
         )
+        listView.adapter = adapter
 
         listView.setOnItemClickListener { _, _, position, id ->
             val toDoItem = listView.adapter.getItem(position) as ToDo
@@ -36,11 +40,12 @@ class MainActivity : AppCompatActivity() {
 
             startActivity(intent)
         }
-
-
-
     }
 
+    override fun onStart() {
+        super.onStart()
+        adapter?.notifyDataSetChanged()
+    }
 
 
 }
