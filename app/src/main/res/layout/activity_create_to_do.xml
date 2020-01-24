@@ -11,28 +11,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="96dp"
-        android:layout_marginTop="49dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="102dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Title"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_Create_Val_Title" />
 
     <EditText
         android:id="@+id/edit_Text_Content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="93dp"
-        android:layout_marginTop="46dp"
+        android:layout_marginTop="38dp"
         android:layout_marginEnd="105dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Content"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_Text_Title" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_Create_Val_Content" />
 
     <Button
         android:id="@+id/button_Save"
@@ -41,10 +43,30 @@
         android:layout_marginStart="154dp"
         android:layout_marginTop="142dp"
         android:layout_marginEnd="169dp"
-        android:layout_marginBottom="356dp"
         android:text="@string/button_Save"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edit_Text_Content" />
+
+    <TextView
+        android:id="@+id/textView_Create_Val_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="177dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_Create_Val_Content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="177dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_Text_Title" />
 </androidx.constraintlayout.widget.ConstraintLayout>
